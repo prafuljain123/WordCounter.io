@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(185, 142, 142);
+}
+*{
+    margin: 0;
+    padding: 0;
+text-align: center;
+}
+#header{
+    margin-top: 20px;
+}
+#inpt{
+    height: 150px;
+    border-radius: 60px;
+    font-size: 30px;
+    border: 6px solid red;
+    color: rgb(243, 11, 11);
+}
+#btn{
+    
+    border:none;
+    cursor: pointer;
+    font-size: 30px;
+    background: lightblue;
+    padding: 15px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+    
+}
+#btn:hover{
+    background:red ;
+}
+#ans{
+    font-weight: 400;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#ans:hover{
+    background-color: rgb(158, 70, 29);
+}

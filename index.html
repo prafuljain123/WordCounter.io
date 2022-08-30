@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <input type="text" id="inpt" placeholder="Enter Some Text" size="70"  ><br>
+        <button type="button" id="btn" onclick={calculate()}>Count</button>
+        <button type="button" id="btn" onclick={reset()}>Reset</button><br/><br/><hr/>
+    </div>
+    <div id="ans">Total Words = <span id="countWords">0</span></div>
+    <script>
+        function reset(){
+            document.getElementById('inpt').value="";
+            document.getElementById('countWords').innerHTML=0;
+        }
+        function calculate(){
+                const val=document.getElementById('inpt').value;
+                const count=val.split(" ");
+                const ans=count.length;
+                document.getElementById('countWords').innerHTML=ans;
+        console.log(ans);
+        }
+
+    </script>
+</body>
+</html>
